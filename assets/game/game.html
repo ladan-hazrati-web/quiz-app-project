@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/game.css" />
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+
+    <div id="loader">
+        <span></span>
+    </div>
+    <p id="error-text">something went wrong | please try again</p>
+    <main>
+      <div class="container">
+        <section id="info-user">
+            <div>
+              <span>Question No:<span id="question-number">1</span></span>
+            </div>
+            <div>
+              <span>Score:<span id="score">0</span></span>
+            </div>
+          </section>
+          <section>
+            <p id="question"></p>
+            <div id="answers">
+              <button class="answers"></button>
+              <button class="answers"></button>
+              <button class="answers"></button>
+              <button class="answers"></button>
+            </div>
+          </section>
+          <section id="button-handler">
+            <button id="finish-btn">Finish</button>
+            <button id="next-btn">Next</button>
+          </section>
+      </div>
+      
+    </main>
+
+    <script src="../js/game.js"></script>
+  </body>
+</html>

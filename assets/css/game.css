@@ -1,0 +1,111 @@
+
+main {
+  width: 100%;
+  /* background-color: red; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+    width: 480px;
+    display: none;
+    margin:  15px;
+}
+#info-user {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 50px 0;
+  color: #5757d9;
+  font-size: 20px;
+}
+#question-number,
+#score {
+  background-color: white;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+#question,
+#answers > button {
+  width: 100%;
+  background-color: #5757d9;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#answers {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+#answers > button {
+  border: none;
+  padding: 20px 30px;
+  margin: 10px 0;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: 0.2s ease-in;
+  text-align: left;
+}
+#answers > button:hover {
+  background-color: #6757d9;
+  color: black;
+}
+#button-handler > button {
+    border: none;
+  border:2px solid  #5757d9;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #5757d9;
+  font-size: 16px;
+  transition: 0.2s ease-in;
+}
+#button-handler > button:nth-of-type(2){
+    margin-left: 10px;
+}
+#button-handler > button:hover{
+    color: white;
+    background-color: #5757d9;
+}
+#loader{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    width: 100%;
+}
+#loader>span {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5757d9;
+    text-align: center;
+    border-top: transparent;
+    border-bottom: transparent;
+    animation: anime 1.5s infinite linear;
+}
+
+@keyframes anime {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+#answers > button.correct {
+    background-color: rgb(19, 207, 19);
+}
+#answers > button.incorrect {
+    background-color: rgb(224, 40, 30);
+}
+#error-text {
+  display: flex;
+  justify-content: center;
+  display: none;
+  margin-top: 100px;
+}
